@@ -1,0 +1,46 @@
+{
+  "evaluated_group": "Home Ownership",
+  "approval_rate_gap": 0.12847141641525486,
+  "false_positive_rate_gap": 0.12133885030294078,
+  "false_negative_rate_gap": 0.13596491228070176,
+  "predicted_default_rate_gap": 0.12131585054537009,
+  "mitigation_note": "Removing Home Ownership appears feasible because the final-model performance changes are modest. This makes feature removal a credible simplification if governance prefers a more conservative feature set.",
+  "disclaimer": "This summary is based on held-out historical test-set evaluation for governance review, not the current applicant alone.",
+  "group_summary": [
+    {
+      "Home Ownership": "Home Mortgage",
+      "sample_count": 556,
+      "approval_rate": 0.3435251798561151,
+      "false_positive_rate": 0.5891089108910891,
+      "false_negative_rate": 0.17763157894736842
+    },
+    {
+      "Home Ownership": "Rent",
+      "sample_count": 476,
+      "approval_rate": 0.226890756302521,
+      "false_positive_rate": 0.7104477611940299,
+      "false_negative_rate": 0.0851063829787234
+    },
+    {
+      "Home Ownership": "Own Home",
+      "sample_count": 93,
+      "approval_rate": 0.21505376344086022,
+      "false_positive_rate": 0.7101449275362319,
+      "false_negative_rate": 0.041666666666666664
+    }
+  ],
+  "ablation_test_performance": {
+    "with_home_ownership": {
+      "roc_auc": 0.6777649373770185,
+      "precision": 0.34538653366583544,
+      "recall": 0.8738170347003155,
+      "f1": 0.49508489722966936
+    },
+    "without_home_ownership": {
+      "roc_auc": 0.6870607802105132,
+      "precision": 0.3490683229813665,
+      "recall": 0.886435331230284,
+      "f1": 0.5008912655971479
+    }
+  }
+}
