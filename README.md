@@ -3,7 +3,7 @@
 Streamlit app and supporting assets for an AI credit decisioning system built for the MH6818 FinTech assignment. The app scores applications, applies decision rules, and shows fairness monitoring outputs using the model and local data files stored in this repository.
 
 ## Entrypoint
-
+- Live link: https://amh6818-assignment-1-abhishek-srivastava.streamlit.app/
 - Streamlit app: `app.py`
 - Default branch for deployment: `main`
 
